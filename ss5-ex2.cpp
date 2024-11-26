@@ -1,12 +1,17 @@
 #include <stdio.h>
 
 int main(){
-	int soChotruoc=10, soNhap;
+	int soNhap;
 	 while (1) {
         printf("Nhap mot so nguyen: ");
         scanf("%d", &soNhap); 
-        break; 
-    }
-	
+        
+    if (soNhap==10){
+    	goto end;
+	}else{
+		printf("Nhap lai\n");
+		}
+	}
+	end:
 	return 0;
 }
